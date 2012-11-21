@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[Aspects]Aspects.DccTraceAttribute">
+    <Instance Declaration="#2=A:WidgetService" Id="40de11e33abb8915">
+      <Target Target="#3=M:[WidgetService]WidgetService.CustomerResource::GetCustomer(System.Int32)">
+        <JoinPoint Advising="#1" Description="#4=Wrapped by advice(s) OnEntry, OnExit" Ordinal="3" />
+      </Target>
+      <Target Target="#5=M:[WidgetService]WidgetService.CustomerResource::GetCustomers()">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="3" />
+      </Target>
+      <Target Target="#6=M:[WidgetService]WidgetService.CustomerResource::DeleteCustomer(System.Int32)">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="3" />
+      </Target>
+      <Target Target="#7=M:[WidgetService]WidgetService.CustomerResource::#ctor()">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="3" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#8=T:[Aspects]Aspects.PerformanceAttribute">
+    <Instance Declaration="#2" Id="40de11e3aedbc36d">
+      <Target Target="#3">
+        <JoinPoint Advising="#8" Description="#4" Ordinal="4" />
+      </Target>
+      <Target Target="#5">
+        <JoinPoint Advising="#8" Description="#4" Ordinal="4" />
+      </Target>
+      <Target Target="#6">
+        <JoinPoint Advising="#8" Description="#4" Ordinal="4" />
+      </Target>
+      <Target Target="#7">
+        <JoinPoint Advising="#8" Description="#4" Ordinal="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#2" Id="40de11e3af31c345">
+      <Target Target="#9=M:[WidgetService]WidgetService.Model.WidgetDataLayer::GetCustomer(System.Int32)">
+        <JoinPoint Advising="#8" Description="#4" Ordinal="2" />
+      </Target>
+      <Target Target="#10=M:[WidgetService]WidgetService.Model.WidgetDataLayer::GetCustomers()">
+        <JoinPoint Advising="#8" Description="#4" Ordinal="2" />
+      </Target>
+      <Target Target="#11=M:[WidgetService]WidgetService.Model.WidgetDataLayer::DeleteCustomer(System.Int32)">
+        <JoinPoint Advising="#8" Description="#4" Ordinal="2" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#12=T:[Aspects]Aspects.CacheAttribute">
+    <Instance Declaration="#2" Id="40de11e3b011d1c5">
+      <Target Target="#9">
+        <JoinPoint Advising="#12" Description="#13=Wrapped by advice(s) OnEntry, OnSuccess" Ordinal="3" />
+      </Target>
+      <Target Target="#10">
+        <JoinPoint Advising="#12" Description="#13" Ordinal="3" />
+      </Target>
+      <Target Target="#11">
+        <JoinPoint Advising="#12" Description="#13" Ordinal="3" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#14=T:[Aspects]Aspects.ExceptionHandlingAttribute">
+    <Instance Declaration="#2" Id="40de11e3becaa4f5">
+      <Target Target="#3">
+        <JoinPoint Advising="#14" Description="#15=Wrapped by advice(s) OnException" Ordinal="5" />
+      </Target>
+      <Target Target="#5">
+        <JoinPoint Advising="#14" Description="#15" Ordinal="5" />
+      </Target>
+      <Target Target="#6">
+        <JoinPoint Advising="#14" Description="#15" Ordinal="5" />
+      </Target>
+      <Target Target="#7">
+        <JoinPoint Advising="#14" Description="#15" Ordinal="5" />
+      </Target>
+    </Instance>
+  </Class>
+</Symbols>
